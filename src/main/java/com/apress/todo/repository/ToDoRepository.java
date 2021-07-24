@@ -20,7 +20,6 @@ public class ToDoRepository implements CommonRepository<ToDo>{
         ToDo result = toDos.get(domain.getId());
         if(result != null) {
             result.setModified(LocalDateTime.now());
-            System.out.println(domain.getDescription());
             result.setDescription(domain.getDescription());
             result.setCompleted(domain.isCompleted());
             domain = result;
