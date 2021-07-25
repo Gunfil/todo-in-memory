@@ -24,7 +24,6 @@ public class ToDoRepository implements CommonRepository<ToDo>{
             result.setCompleted(domain.isCompleted());
             domain = result;
         }
-        System.out.println(domain.getDescription());
         toDos.put(domain.getId(), domain);
         return toDos.get(domain.getId());
     }
